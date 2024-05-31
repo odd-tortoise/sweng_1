@@ -40,3 +40,6 @@ have selected that specific test case and the behaviour you expect from
 it. Push the result of your work in your repo. If your local environment
 does not allow you to create a correct build, consider using the GitHub
 actions and their runners. This will be useful also for your next task.
+
+
+# COMMENTO TEST PER TRIGGER DELLE ACTIONS
