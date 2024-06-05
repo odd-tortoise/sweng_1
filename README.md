@@ -7,12 +7,12 @@ This is the classical example of multiplication. There are no constraints.
 
 $$
 \begin{bmatrix} 
-8 & 2 & 3\\
+8 & 2 & 3 \\
 4 & 5 & 8
 \end{bmatrix}
 \begin{bmatrix}
-7 & 8 \\
-9 & 10 \\
+7 & 8\\
+9 & 10\\
 11 & 12 
 \end{bmatrix}
 $$
