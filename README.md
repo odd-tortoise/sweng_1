@@ -21,15 +21,15 @@ We got
 
 $$
 Res = 
-begin{bmatrix}
-2077 & 127 
-169 & 184 
-end{bmatrix}
-neq
-begin{bmatrix}
-107 & 120 
-161 & 178 
-end{bmatrix} = Expected
+\begin{bmatrix}
+2077 & 127 \\
+169 & 184 \\
+\end{bmatrix}
+\neq
+\begin{bmatrix}
+107 & 120\\ 
+161 & 178 \\
+\end{bmatrix} = Expected
 $$
 and we were able to catch the following errors:
 
