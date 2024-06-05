@@ -8,7 +8,7 @@ This is the classical example of multiplication. There are no constraints.
 $$
 \begin{bmatrix} 
 8 & 2 & 3 \\
-4 & 5 & 8
+4 & 5 & 8\\
 \end{bmatrix}
 \begin{bmatrix}
 7 & 8\\
@@ -21,15 +21,15 @@ We got
 
 $$
 Res = 
-\begin{bmatrix}
-2077 & 127 \\
-169 & 184 \\
-\end{bmatrix}
-\neq
-\begin{bmatrix}
-107 & 120 \\
-161 & 178 \\
-\end{bmatrix} = Expected
+begin{bmatrix}
+2077 & 127 
+169 & 184 
+end{bmatrix}
+neq
+begin{bmatrix}
+107 & 120 
+161 & 178 
+end{bmatrix} = Expected
 $$
 and we were able to catch the following errors:
 
@@ -49,25 +49,25 @@ we understand erros come from structure of matrix or from its elements.
 The test's aim is to verify the correctness of the simplest type of multiplication. It wants to test the neutral element.
 
 $$
-\begin{bmatrix} 
-99 & 6 & 12\\
-14 & 99 & 16\\
+begin{bmatrix} 
+99 & 6 & 12
+14 & 99 & 16
 17 & 18 & 11
-\end{bmatrix}
-\begin{bmatrix}
-1 & 0 & 0\\
-0 & 1 & 0\\
+end{bmatrix}
+begin{bmatrix}
+1 & 0 & 0
+0 & 1 & 0
 0 & 0 & 1
-\end{bmatrix}
+end{bmatrix}
 $$
 
 Our expected result was the left operand of the matrix multiplication. This test was failed getting:
 $$
-\begin{bmatrix}
-2025 & 6 & 19\\
-17 & 109 &18\\ 
+begin{bmatrix}
+2025 & 6 & 19
+17 & 109 &18 
 20 & 26 &11 
-\end{bmatrix}
+end{bmatrix}
 $$
 and we were able to catch the following errors:
 
@@ -92,25 +92,25 @@ the simplest multiplication fails. It is difficult that more sofisticated types 
 The test aims to verify the existence of the null multiplication element.
 
 $$
-\begin{bmatrix} 
-1 & 1 & 1\\
-5 & 5 & 5\\
+begin{bmatrix} 
+1 & 1 & 1
+5 & 5 & 5
 1 & 0 & 1
-\end{bmatrix}
-\begin{bmatrix}
-0 & 0 & 0\\
-0 & 0 & 0\\
+end{bmatrix}
+begin{bmatrix}
 0 & 0 & 0
-\end{bmatrix}
+0 & 0 & 0
+0 & 0 & 0
+end{bmatrix}
 $$
 
 Our expected result was the zero matrix. This test was failed getting:
 $$
-\begin{bmatrix}
-1987 & 3 & 7\\
-2 & 9 & 8 \\
+begin{bmatrix}
+1987 & 3 & 7
+2 & 9 & 8 
 10 & 3 & 1
-\end{bmatrix}
+end{bmatrix}
 $$
 and we were able to catch the following errors:
 
@@ -139,29 +139,29 @@ results show the that zero matrix is not the null multiplication element.
 The test aims to discover eventually changing when matrix is composed of negative numbers:
 
 $$
-\begin{bmatrix} 
--1 & 2 & 3\\
+begin{bmatrix} 
+-1 & 2 & 3
 4 & -5 & -6
-\end{bmatrix}
-\begin{bmatrix}
-7 & -8 \\
--9 & 1000000 \\
+end{bmatrix}
+begin{bmatrix}
+7 & -8 
+-9 & 1000000 
 -11 & 12 
-\end{bmatrix}
+end{bmatrix}
 $$
 
 
 $$
 Res = 
-\begin{bmatrix}
-2066 & 2000064\\
+begin{bmatrix}
+2066 & 2000064
 154 & -5000090
-\end{bmatrix}
-\neq
-\begin{bmatrix}
--58 & 2000044\\
+end{bmatrix}
+neq
+begin{bmatrix}
+-58 & 2000044
 139 & -5000104
-\end{bmatrix} = Expected
+end{bmatrix} = Expected
 $$
 
 The result is still wrong and we were able to catch the following errors:
@@ -189,32 +189,32 @@ Error 20: Number of columns in matrix A is odd!
 ## Test 4 - Transpose multiplication 
 The last test try to find a relation between a matrix and its transpose:
 $$
-\begin{bmatrix} 
-1 & 2 & 3\\
-4 & 5 & 6\\
+begin{bmatrix} 
+1 & 2 & 3
+4 & 5 & 6
 7 & 8 & 9
-\end{bmatrix}
-\begin{bmatrix}
-1 & 4 & 7 \\
-2 & 5 & 8 \\
+end{bmatrix}
+begin{bmatrix}
+1 & 4 & 7 
+2 & 5 & 8 
 3 & 6 & 9 
-\end{bmatrix}
+end{bmatrix}
 $$
 
 
 $$
 Res = 
-\begin{bmatrix}
-1999 & 32 & 50 \\
-37 & 77 & 130 \\
+begin{bmatrix}
+1999 & 32 & 50 
+37 & 77 & 130 
 63 & 139 & 206
-\end{bmatrix}
-\neq
-\begin{bmatrix}
-14 & 32 & 50 \\
-32 & 77 & 122 \\
+end{bmatrix}
+neq
+begin{bmatrix}
+14 & 32 & 50 
+32 & 77 & 122 
 50 & 122 & 194
-\end{bmatrix} = Expected
+end{bmatrix} = Expected
 $$
 
 The result is still wrong and we were able to catch the following errors:
