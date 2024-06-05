@@ -31,6 +31,7 @@ Res =
 161 & 178 \\
 \end{bmatrix} = Expected
 $$
+
 and we were able to catch the following errors:
 
 ```
@@ -49,16 +50,16 @@ we understand erros come from structure of matrix or from its elements.
 The test's aim is to verify the correctness of the simplest type of multiplication. It wants to test the neutral element.
 
 $$
-begin{bmatrix} 
-99 & 6 & 12
-14 & 99 & 16
+\begin{bmatrix} 
+99 & 6 & 12\\
+14 & 99 & 16\\
 17 & 18 & 11
-end{bmatrix}
-begin{bmatrix}
-1 & 0 & 0
-0 & 1 & 0
+\end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
 0 & 0 & 1
-end{bmatrix}
+\end{bmatrix}
 $$
 
 Our expected result was the left operand of the matrix multiplication. This test was failed getting:
